@@ -19,10 +19,10 @@ public class CursosFbMysql {
      private Statement statement_my = null;
      private String db= "db_jee2";
      private String user = "SYSDBA";
-     private String password = "?????";
+     private String password = "20591";
      private String db_my= "inscripciones_alumnos";
-     private String user_my = "desadev";
-     private String password_my = "?????????";
+     private String user_my = "root";
+     private String password_my = "";
  
  //Constructor de la clase que se conecta a la base de datos una vez que se crea la instancia
    public CursosFbMysql(){
@@ -45,7 +45,7 @@ public class CursosFbMysql {
        try{
           
           Class.forName("com.mysql.jdbc.Driver");
-          connection_my = DriverManager.getConnection("jdbc:mysql://192.168.10.10/" + db_my, this.user_my, this.password_my);
+          connection_my = DriverManager.getConnection("jdbc:mysql://localhost/" + db_my, this.user_my, this.password_my);
           System.out.println("Conectado a la base de datos [ " + this.db_my + "]");
        }catch(Exception e){
           System.out.println(e);
