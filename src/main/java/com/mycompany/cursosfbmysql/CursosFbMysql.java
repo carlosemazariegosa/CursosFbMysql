@@ -19,10 +19,10 @@ public class CursosFbMysql {
      private Statement statement_my = null;
      private String db= "db_jee2";
      private String user = "SYSDBA";
-     private String password = "20591";
+     private String password = "?????";
      private String db_my= "inscripciones_alumnos";
      private String user_my = "desadev";
-     private String password_my = "25012K967";
+     private String password_my = "?????????";
  
  //Constructor de la clase que se conecta a la base de datos una vez que se crea la instancia
    public CursosFbMysql(){
