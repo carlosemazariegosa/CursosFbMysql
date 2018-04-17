@@ -118,7 +118,7 @@ public class CursosFbMysql {
   
 public String select_my()
   {
-     String res=" ID | CodMov | Nombre  \n ";
+     String res=" Semestre | Facultad | Año | Carnet  \n ";
      try {
        statement_my = connection_my.createStatement();
        resultSet_my = statement_my.executeQuery("SELECT * FROM Inscripcion order by Referencia desc limit 25");
