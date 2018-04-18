@@ -9,6 +9,17 @@ import java.sql.Statement;
 /**
  * @author 
  */
+
+/*
+ TO DO:
+ - Timer https://poesiabinaria.net/2014/01/intro-timertask-java/
+ - Log: 
+ - - Crear el archivo tipo Logger: https://coderanch.com/t/410260/java/Writing-log-file
+ - - Crear el path:    Path p = Paths.get("./logfile.txt");
+ - - Crear el formato de fecha: https://www.lawebdelprogramador.com/foros/Java/88884-Crear-archivo-llevando-x-titulo-la-fecha-del-sist.html
+*/
+
+
 public class CursosFbMysql {
 
      private Connection connection = null;
