@@ -6,6 +6,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+
 /**
  * @author 
  */
@@ -34,7 +41,7 @@ public class CursosFbMysql {
      private String db_my= "inscripciones_alumnos";
      private String user_my = "root";
      private String password_my = "";
- 
+     private Boolean reslog;
  //Constructor de la clase que se conecta a la base de datos una vez que se crea la instancia
    public CursosFbMysql(){
        try{
@@ -75,7 +82,7 @@ public class CursosFbMysql {
   * Boolean
 */
    
-  public boolean insert(String table, String fields, String values)
+  public boolean insert(String table, String fields, String values,Logger logger)
      {
          boolean res=false;
          //Se arma la consulta
@@ -86,9 +93,11 @@ public class CursosFbMysql {
              pstm.execute();
              pstm.close();
              res=true;
+             //reclog("Insert Firebird -> OK");
           }catch(Exception e){
              System.out.println(e);
              System.out.println("Fallo el Insert ...");
+             reslog = reclog("Error al insertar en Firebird -> OK", logger);             
          }
        return res;
      }
@@ -103,7 +112,7 @@ public class CursosFbMysql {
   * OUTPUT:
   String con los datos concatenados
  */
-  public String select()
+  public String select(Logger logger)
   {
      String res=" ID | CodMov | Nombre  \n ";
      try {
@@ -122,12 +131,12 @@ public class CursosFbMysql {
          System.out.println("Select ...");
          
       }
-     
+     reslog = reclog("Consulta FireBird -> OK",logger);
      return res;
      
   }
   
-public String select_my()
+public String select_my(Logger logger)
   {
      String res=" Semestre | Facultad | Año | Carnet  \n ";
      try {
@@ -142,70 +151,122 @@ public String select_my()
              resultSet_my.getString("Carnet") + " \n ";
              
         }
+       reslog = reclog("Consulta MySQL... -> OK",logger);
       }
       catch (SQLException ex) {
          System.out.println(ex);
          System.out.println("Error 0003: Select ...");
          
       }
-     
-     return res;
+    return res;
      
   }  
 // -------------------------------
 // -------------------------------   
 // -------------------------------   
 
-  public void desconectar()
+  public void desconectar(Logger logger)
      {
          try {
              resultSet.close();
              statement.close();
              connection.close();
              System.out.println("Desconectado de la base de datos [ " + this.db + "]");
+             reslog = reclog("Desconecta Firebird -> OK",logger);
          }        
          catch (SQLException ex) {
              System.out.println(ex);
          }
      }
  
-public void desconectar_my()
+public void desconectar_my(Logger logger)
      {
          try {
              resultSet_my.close();
              statement_my.close();
              connection_my.close();
              System.out.println("Desconectado de la base de datos [ " + this.db_my + "]");
+             reslog = reclog("Desconecta MySQL... -> OK",logger);
          }        
          catch (SQLException ex) {
              System.out.println(ex);
          }
      }  
+
+     
+public boolean reclog(String imsj, Logger logger) {
+         
+        // Logger logger = Logger.getLogger("MyLog");
+        // FileHandler fh;
+         
+        
+             
+            // This block configure the logger with handler and formatter
+            // El valor true indica que escriba en el mismo archivo
+            // fh = new FileHandler("./MyLogFile.log", true);
+            // logger.addHandler(fh);
+            // logger.setLevel(Level.ALL);
+            // SimpleFormatter formatter = new SimpleFormatter();
+            // fh.setFormatter(formatter);
+             
+            // the following statement is used to log any messages
+            logger.info(imsj);
+             
+        
+         
+        //logger.info("Hi How r u?");
+        return true;
+        
+}
+     
 // -------------------------------
 // -------------------------------   
 // -------------------------------   
 
 
-public static void main(String[] args) {        
-         //Se crea el objeto y se conecta a firebird
-         CursosFbMysql fbc = new CursosFbMysql();
-         //Se insertan algunos datos
-         fbc.insert("acad_tipo_mov", " id, codigo_mov , nombre ", "991, 'AAA' , 'A1' ");
-         fbc.insert("acad_tipo_mov", " id, codigo_mov , nombre ", "992, 'BBB' , 'B1' ");
-         fbc.insert("acad_tipo_mov", " id, codigo_mov , nombre ", "993, 'CCC' , 'C1' ");
+public static void main(String[] args) { 
+        //
+        // Se definen la configuración para la bitacora
+        //
+        
+        Logger logger = Logger.getLogger("MyLog");
+        FileHandler fh;
+        try {    
+           fh = new FileHandler("./MyLogFile.log", true);
+           logger.addHandler(fh);
+           logger.setLevel(Level.ALL);
+           SimpleFormatter formatter = new SimpleFormatter();
+           fh.setFormatter(formatter);
+        } catch (SecurityException e) {
+            e.printStackTrace();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+        
+        //Se crea el objeto y se CONECTA a firebird
+        
+        CursosFbMysql fbc = new CursosFbMysql();
+        
+        //Se insertan algunos datos
+        fbc.insert("acad_tipo_mov", " id, codigo_mov , nombre ", "991, 'AAA' , 'A1' ", logger);
+        fbc.insert("acad_tipo_mov", " id, codigo_mov , nombre ", "992, 'BBB' , 'B1' ", logger);
+        fbc.insert("acad_tipo_mov", " id, codigo_mov , nombre ", "993, 'CCC' , 'C1' ", logger);
          
-         //Se imprimen los datos de la tabla
-         System.out.println( fbc.select() );
-         fbc.desconectar();  
+        //Se imprimen los datos de la tabla - SELECT
+        
+        System.out.println( fbc.select(logger) );
+        fbc.desconectar(logger);  
          
-         //
-         //
+        //Se crea el objeto y se CONECTA a MySQL
          
-         CursosFbMysql mys = new CursosFbMysql();
-         mys.CursosMysql();
+        CursosFbMysql mys = new CursosFbMysql();
+        mys.CursosMysql();
          
-         System.out.println( mys.select_my() );
-         mys.desconectar_my();  
+        //Se imprimen los datos de la tabla - SELECT
+        
+        System.out.println( mys.select_my(logger) );
+        mys.desconectar_my(logger);  
+         
     }
      
 }
