@@ -1,68 +1,70 @@
-abr 19, 2018 3:34:10 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:34:10 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta MySQL... -> OK
-abr 19, 2018 3:34:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:34:25 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta MySQL... -> OK
-abr 19, 2018 3:34:54 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:34:54 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta MySQL... -> OK
-abr 19, 2018 3:35:00 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:35:00 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta MySQL... -> OK
-abr 19, 2018 3:39:28 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:32:55 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:39:28 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:32:55 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:39:28 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:32:55 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:39:29 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:32:55 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Consulta FireBird -> OK
-abr 19, 2018 3:39:29 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:32:55 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:39:29 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:32:55 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Consulta MySQL... -> OK
-abr 19, 2018 3:39:29 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:32:55 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Desconecta MySQL... -> OK
-abr 19, 2018 3:45:37 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:33:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:45:37 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:33:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:45:37 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:33:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:45:37 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:33:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Consulta FireBird -> OK
-abr 19, 2018 3:45:37 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:33:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:47:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:47:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:47:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:47:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Consulta FireBird -> OK
-abr 19, 2018 3:47:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
-INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:47:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:33:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Consulta MySQL... -> OK
-abr 19, 2018 3:47:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:33:15 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Desconecta MySQL... -> OK
-abr 19, 2018 3:51:08 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:45:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:51:08 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:45:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:51:08 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:45:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Error al insertar en Firebird -> OK
-abr 19, 2018 3:51:08 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:45:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Consulta FireBird -> OK
-abr 19, 2018 3:51:08 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:45:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Desconecta Firebird -> OK
-abr 19, 2018 3:51:08 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:45:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Consulta MySQL... -> OK
-abr 19, 2018 3:51:08 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+abr 26, 2018 12:45:24 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Desconecta MySQL... -> OK
+abr 26, 2018 12:45:43 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Error al insertar en Firebird -> OK
+abr 26, 2018 12:45:43 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Error al insertar en Firebird -> OK
+abr 26, 2018 12:45:43 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Error al insertar en Firebird -> OK
+abr 26, 2018 12:45:43 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Consulta FireBird -> OK
+abr 26, 2018 12:45:43 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Desconecta Firebird -> OK
+abr 26, 2018 12:45:43 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Consulta MySQL... -> OK
+abr 26, 2018 12:45:43 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Desconecta MySQL... -> OK
+abr 26, 2018 12:46:03 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Error al insertar en Firebird -> OK
+abr 26, 2018 12:46:03 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Error al insertar en Firebird -> OK
+abr 26, 2018 12:46:03 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Error al insertar en Firebird -> OK
+abr 26, 2018 12:46:03 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Consulta FireBird -> OK
+abr 26, 2018 12:46:03 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Desconecta Firebird -> OK
+abr 26, 2018 12:46:03 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
+INFORMACIÓN: Consulta MySQL... -> OK
+abr 26, 2018 12:46:03 PM com.mycompany.cursosfbmysql.CursosFbMysql reclog
 INFORMACIÓN: Desconecta MySQL... -> OK
